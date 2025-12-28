@@ -1,0 +1,110 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    /* Space for footer */
+}
+
+.topBar {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.progressInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progressLabel {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.progressBarBg {
+    flex: 1;
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: var(--success);
+    transition: width 0.3s ease;
+}
+
+.progressPercent {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    min-width: 3rem;
+    text-align: right;
+}
+
+.inspectorInfo {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
+.mainContent {
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem 2rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 20;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indicator {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    .topBar {
+        padding: 1rem;
+    }
+
+    .inspectorInfo {
+        text-align: left;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .indicator {
+        display: none;
+    }
+}

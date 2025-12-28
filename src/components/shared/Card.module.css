@@ -1,0 +1,19 @@
+.card {
+    background-color: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.normal {
+    padding: 1.5rem;
+}
+
+.none {
+    padding: 0;
+}
+
+.large {
+    padding: 2.5rem;
+}

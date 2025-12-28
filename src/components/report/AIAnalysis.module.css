@@ -1,0 +1,72 @@
+.container {
+    border: 1px solid #e1e4e8;
+    background: linear-gradient(to bottom right, #ffffff, #f8fbff);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.aiTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--primary);
+}
+
+.icon {
+    color: var(--accent);
+}
+
+.summary {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.recommendations h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.recIcon {
+    color: var(--warning);
+}
+
+.recommendations ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recommendations li {
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent);
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.legalNote {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: #f1f5f9;
+    padding: 0.5rem;
+    border-radius: 4px;
+}

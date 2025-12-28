@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headerCard {
+    border-left: 4px solid var(--accent);
+}
+
+.title {
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.description {
+    color: var(--text-secondary);
+}
+
+.questionsCard {
+    margin-top: 0.5rem;
+}
